@@ -1,0 +1,105 @@
+/* Gloabl CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* form */
+#search{
+  text-align: center;  
+}
+#search input[type=text]{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #00BCD4;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+}
+#search input[type=submit]{
+    height: 40px;
+    border: 1px solid #03A9F4;
+    background: #2196F3;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* NAV from w3 school */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/* Data Results Table */
+#dataTable{
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+#dataTable tr{
+    width: 100%;
+}
+#dataTable tr th:first-child,#dataTable tr td:first-child{
+    width:20%;
+    padding: 4px 3px;
+    border:1px solid #000;
+    text-align: left;
+}
+  #dataTable tr th,#dataTable tr td{
+    width: 60%;
+    padding: 4px 3px;
+    border:1px solid #000;
+    text-align: left;
+}
