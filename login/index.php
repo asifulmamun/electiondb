@@ -1,7 +1,3 @@
-<?php
-  // server request method
-  if($_SERVER['REQUEST_METHOD'] !== 'POST' OR empty($_SESSION['login_status'])){
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -141,7 +137,7 @@ span.psw {
 <a class="button" href="#">Register</a>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="" method="post">
+  <form class="modal-content animate" action="login.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
@@ -176,10 +172,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
-<?php
-  } // server request method
-  elseif($_SERVER['REQUEST_METHOD'] == 'POST'){
-    
-  }
-?>

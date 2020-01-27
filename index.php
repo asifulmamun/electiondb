@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    // if not logged
+    if($_SESSION['login_status'] !== 'true'){
+        header('location:login/');
+    }
+    else{
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,15 +25,13 @@
         require "configuration/connection.php"; // include db connection
         require "configuration/init.php"; // include db connection
     ?>
-    <!-- Set Browser Information in $browses Variable php -->
-    <script><?php $browses = "<script>document.write(navigator.platform);</script>";?></script>
 </head>
 <body>
     <!-- NAV form w3 school -->
     <?php $nav = new nav; ?>
     <div class="topnav" id="myTopnav">
         <a href="<?php echo $nav->homePage; ?>" class="active">Home</a>
-        <a href="<?php echo $nav->logIn; ?>">Login</a>
+        <a href="<?php echo $nav->logOUt; ?>">Log Out</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -161,3 +168,17 @@
     </script>
 </body>
 </html>
+<?php
+    // if true
+    if($_SESSION['login_status'] == 'true'){
+?>
+    <style>
+        .displayNoneLogOut{
+            display: none;
+        }
+    </style>
+<?php
+    } // if true
+
+    } // if not log
+?>
