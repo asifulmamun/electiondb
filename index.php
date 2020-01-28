@@ -43,6 +43,17 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <!-- NAV JS from W3 School -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }else{
+                x.className = "topnav";
+            }
+        }
+    </script>
 
     <!-- Search Form -->
     <div class="container">
@@ -105,7 +116,7 @@
                         <td><?php echo $data['mother'];?></td>
                     </tr>
                     <tr>
-                        <td>Voter Number</td>
+                        <td>Serial Number</td>
                         <td style='color:blue;'><?php echo $data['sl_no'];?></td>
                     </tr>
                     <tr>
@@ -162,17 +173,6 @@
         } // Request Method
     ?>
 
-    <!-- NAV JS from W3 School -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            }else{
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 </html>
 
