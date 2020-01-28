@@ -1,4 +1,6 @@
     <!-- NAV form w3 school -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php $nav = new nav; ?>
     <div class="topnav" id="myTopnav">
         <a href="<?php echo $nav->homePage; ?>" class="active">Home</a>
