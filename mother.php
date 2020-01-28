@@ -4,7 +4,7 @@
 
         $login_status = $_SESSION["login"];
 
-        echo $login_status . ' Before Condition<br>';
+        echo $login_status . '<a style="color:blue;" href="https://m.me/asifulmamun">@asifulmamun</a><br>';
 
         // // if not logged
         // if($_SESSION['login'] !== 'Logged'){
