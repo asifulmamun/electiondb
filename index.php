@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <?php
         session_start();
+        $login_status = "";
         $login_status = $_SESSION['login'];
         echo $login_status . ' Before Condition<br>';
 
