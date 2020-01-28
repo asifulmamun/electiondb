@@ -13,10 +13,13 @@
 
 
     if($id == "mamun" AND $passWord == "aroj"){
+      
       session_start();
+
       $_SESSION['login_status'] = 'true';
+
       echo '<script>alert("Login Success..");</script>';
-      echo '<h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
+      echo $_SESSION['login_status'] . '<br><h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
       // header('location:../');
     }
     else{
