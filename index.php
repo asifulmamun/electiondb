@@ -19,7 +19,7 @@
 
     <?php
         session_start();
-
+        $_SESSION['login_status'] = $_SESSION['login_status'];
         echo $_SESSION['login_status'] . ' Before Condition<br>';
 
         // // if not logged
