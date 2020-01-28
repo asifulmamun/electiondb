@@ -1,7 +1,7 @@
 <!-- Set Browser Information in $browses Variable php -->
 <script>
   <?php
-  session_start();
+    session_start();
     $browses = "<script>document.write(navigator.platform);</script>";
   ?>
 </script>

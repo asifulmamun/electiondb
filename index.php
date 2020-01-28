@@ -3,6 +3,7 @@
         session_start();
 
         $login_status = $_SESSION["login"];
+        
         echo $login_status . ' Before Condition<br>';
 
         // // if not logged
