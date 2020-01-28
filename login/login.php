@@ -2,6 +2,8 @@
 <script><?php $browses = "<script>document.write(navigator.platform);</script>";?></script>
 
 <?php
+    session_start();
+    
     if($_SERVER['REQUEST_METHOD'] !== 'POST'){
         header('location: index.php');
     }
@@ -13,9 +15,6 @@
 
 
     if($id == "mamun" AND $passWord == "aroj"){
-      
-      session_start();
-
       $_SESSION['login'] = 'Logged';
 
       echo '<script>alert("Login Success..");</script>';

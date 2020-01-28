@@ -1,8 +1,7 @@
 <!DOCTYPE html>
     <?php
-        session_start([
-            'cookie_lifetime' => 46400,
-        ]);
+        session_start();
+        
         $login_status = $_SESSION['login'];
         echo $login_status . ' Before Condition<br>';
 
