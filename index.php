@@ -2,7 +2,9 @@
     session_start();
     // if not logged
     if($_SESSION['login_status'] !== 'true'){
-        header('location:login/');
+        echo '<script>alert("Your have not logged in yet.");</script>';
+        echo '<h1 style="color:red;">For Login <a href="../">click here</a>.</h1>';
+        // header('location:login/');
     }
     else{
 ?>
