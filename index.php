@@ -1,10 +1,13 @@
 <?php
     session_start();
+
+    echo $_SESSION['login_status'] . ' Before Condition<br>';
+
     // if not logged
     if($_SESSION['login_status'] !== 'true'){
-
+        
         echo '<script>alert("Your have not logged in yet.");</script>';
-        echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="../">click here</a>.</h1>';
+        echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
         // header('location:login/');
     }
     else{
