@@ -27,5 +27,5 @@
 
     <!-- ecs logo -->
     <center>
-    <img style="width: 80px;margin: 20px 0px;" src="assets/img/ecs.jpg" alt="ecs-bd">
+    <img style="width: 80px;margin: 15px 0px;" src="http://election.nrbrightsmovement.com/assets/img/esc.jpg" alt="ecs-bd">
     </center>
