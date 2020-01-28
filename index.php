@@ -2,9 +2,9 @@
     <?php
         session_start();
 
-        // $login_status = $_SESSION["login"];
+        $login_status = $_SESSION["login"];
 
-        // echo $login_status . '<a style="color:blue;" href="https://m.me/asifulmamun">@asifulmamun</a><br>';
+        echo $login_status . '<a style="color:blue;" href="https://m.me/asifulmamun">@asifulmamun</a><br>';
 
         // // if not logged
         // if($_SESSION['login'] !== 'Logged'){

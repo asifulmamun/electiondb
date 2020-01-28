@@ -24,3 +24,8 @@
             }
         }
     </script>
+
+    <!-- ecs logo -->
+    <center>
+    <img style="width: 80px;margin: 20px 0px;" src="http://ecs.gov.bd/front/assets/images/logo.png" alt="ecs-bd">
+    </center>
