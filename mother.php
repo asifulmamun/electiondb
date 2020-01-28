@@ -38,9 +38,9 @@
     <?php $nav = new nav; ?>
     <div class="topnav" id="myTopnav">
         <a href="<?php echo $nav->homePage; ?>" class="active">Home</a>
-        <a href="sl-number.php">ভোটার/সিরিয়াল নাম্বার দিয়ে</a>
-        <a href="father.php">বাবার নাম দিয়ে</a>
-        <a href="mother.php">মাতার নাম দিয়ে</a>
+        <a class="fontGalanda" href="sl-number.php">ভোটার/সিরিয়াল নাম্বার দিয়ে</a>
+        <a class="fontGalanda" href="father.php">বাবার নাম দিয়ে</a>
+        <a class="fontGalanda" href="mother.php">মাতার নাম দিয়ে</a>
         <a href="<?php echo $nav->logOUt; ?>">Log Out</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -63,8 +63,8 @@
         <div class="row">
             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
                 <form id="search" action="" method="post">
-                    <br><b class="redNotice">NOTE: </b><span class="redNotice">আইডি কার্ড নাম্বার দিয়ে অথবা নাম দিয়ে খুজুন। (নাম দিয়ে খোজার সময় বাংলা ভাষা ব্যবহার করুন আর আইডি কার্ড দিয়ে খোজার সময় English ব্যবহার করুন।)</span>
-                    <br><br><input placeholder="ID (English) / নাম (বাংলায়)" type="text" name="search">
+                    <br><b class="redNotice">NOTE: </b><span class="redNotic">বাংলায় মাতার নাম দিয়ে খুজুন</span>
+                    <br><br><input placeholder="বাংলায় মাতার নাম দিয়ে খুজুন" type="text" name="search">
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -86,7 +86,7 @@
             $search = $_POST['search'];
             $ward_no = '30';
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE nid LIKE '%$search%' OR name LIKE '%$search%'";
+            $sql = "SELECT * FROM voter_lists WHERE mother LIKE '%$search%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
