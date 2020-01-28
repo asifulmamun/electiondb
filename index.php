@@ -3,14 +3,14 @@
 
     echo $_SESSION['login_status'] . ' Before Condition<br>';
 
-    // if not logged
-    if($_SESSION['login_status'] !== 'true'){
+    // // if not logged
+    // if($_SESSION['login_status'] !== 'true'){
         
-        echo '<script>alert("Your have not logged in yet.");</script>';
-        echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
-        // header('location:login/');
-    }
-    else{
+    //     echo '<script>alert("Your have not logged in yet.");</script>';
+    //     echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
+    //     // header('location:login/');
+    // }
+    // else{
 ?>
 
 <!DOCTYPE html>
@@ -174,17 +174,7 @@
     </script>
 </body>
 </html>
-<?php
-    // if true
-    if($_SESSION['login_status'] == 'true'){
-?>
-    <style>
-        .displayNoneLogOut{
-            display: none;
-        }
-    </style>
-<?php
-    } // if true
 
-    } // if not log
+<?php
+    // } // if not log
 ?>
