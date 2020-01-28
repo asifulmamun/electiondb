@@ -134,7 +134,7 @@ span.psw {
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 <br><br>
 
-<a class="button" href="#">Register</a>
+<a class="button" href="/">Home</a>
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="login.php" method="post">
