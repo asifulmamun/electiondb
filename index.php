@@ -70,7 +70,7 @@
             $search = $_POST['search'];
 
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE ward_no='30' AND nid LIKE '%$search%' OR name LIKE '%$search%'";
+            $sql = "SELECT * FROM voter_lists WHERE ward_no=30 AND nid LIKE '%$search%' OR name LIKE '%$search%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
             // Count How many results get
