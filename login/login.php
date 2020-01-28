@@ -12,10 +12,12 @@
 
 
 
-    if($id == "mamun" && $passWord == "aroj"){
+    if($id == "mamun" AND $passWord == "aroj"){
       session_start();
       $_SESSION['login_status'] = 'true';
-      header('location: ../');
+      echo '<script>alert("Login Success..");</script>';
+      echo '<h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
+      // header('location:../');
     }
     else{
       echo '<script>alert("Sorry! Your ID or Password Incorrect or you have not Authorized.");</script>';
