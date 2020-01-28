@@ -1,20 +1,18 @@
 <!-- Set Browser Information in $browses Variable php -->
 <script>
   <?php
-    session_start();
     $browses = "<script>document.write(navigator.platform);</script>";
   ?>
 </script>
 
 <?php
+    session_start();
     if($_SERVER['REQUEST_METHOD'] !== 'POST'){
         header('location: index.php');
     }
 
     $id = $_POST['id']; // Phone Number
     $passWord = $_POST['psw']; // Password
-    $device = $browses; // Device Name
-
 
 
     if($id == "mamun" AND $passWord == "aroj"){
