@@ -1,7 +1,7 @@
 <?php
    
     // $jsonget = ;
-    $server_info = json_decode(file_get_contents('http://localhost/election/assets/infoServier.json')); // decode json
+    $server_info = json_decode(file_get_contents('http://election.nrbrightsmovement.com/assets/infoServier.json')); // decode json
     
     $servername = $server_info->servername; // Server/Host
     $dbusername = $server_info->dbusername; // Database User Name

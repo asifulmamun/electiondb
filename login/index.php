@@ -144,7 +144,7 @@ span.psw {
 
     <div class="container">
       <label for="uname"><b>Phone Number</b></label>
-      <input type="text" placeholder="Enter Phone Number" name="pn_number" required>
+      <input type="text" placeholder="Enter your ID" name="id" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
