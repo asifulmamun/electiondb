@@ -1,8 +1,8 @@
 <!DOCTYPE html>
     <?php
         session_start();
-        
-        $login_status = $_SESSION['login'];
+
+        $login_status = $_SESSION["login"];
         echo $login_status . ' Before Condition<br>';
 
         // // if not logged
@@ -70,7 +70,7 @@
             $search = $_POST['search'];
             $ward_no = '30';
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE nid LIKE '%$search%' OR name LIKE '%$search%' AND ward_no = '$ward_no'";
+            $sql = "SELECT * FROM voter_lists WHERE nid LIKE '%$search%' OR name LIKE '%$search%' AND ward_no = '".$ward_no."'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
             // Count How many results get

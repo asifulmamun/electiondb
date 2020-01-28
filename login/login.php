@@ -1,9 +1,12 @@
 <!-- Set Browser Information in $browses Variable php -->
-<script><?php $browses = "<script>document.write(navigator.platform);</script>";?></script>
+<script>
+  <?php
+  session_start();
+    $browses = "<script>document.write(navigator.platform);</script>";
+  ?>
+</script>
 
 <?php
-    session_start();
-    
     if($_SERVER['REQUEST_METHOD'] !== 'POST'){
         header('location: index.php');
     }
@@ -15,10 +18,10 @@
 
 
     if($id == "mamun" AND $passWord == "aroj"){
-      $_SESSION['login'] = 'Logged';
+      $_SESSION["login"] = "Logged";
 
       echo '<script>alert("Login Success..");</script>';
-      echo $_SESSION['login'] . '<br><h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
+      echo $_SESSION["login"] . '<br><h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
       // header('location:../');
     }
     else{
