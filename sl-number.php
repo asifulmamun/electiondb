@@ -65,6 +65,7 @@
                 <form id="search" action="" method="post">
                     <br><b class="redNotice">NOTE: </b><span class="redNotice">ভোটার/সিরিয়াল নাম্বার দিয়ে খুজুন। (ইংরেজি/English)</span>
                     <br><br><input placeholder="ভোটার/সিরিয়াল নাম্বার লিখুন (ইংরেজিতে)" type="text" name="search">
+                    <input placeholder="ওয়ার্ড নাম্বার লিখুন (ইংরেজিতে)" type="text" name="ward_no">
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -84,7 +85,7 @@
                 die("Enter Name or NID for data.");
             }
             $search = $_POST['search'];
-            $ward_no = '30';
+            $ward_no = $_POST['ward_no'];
             // Query Which Result Want
             $sql = "SELECT * FROM voter_lists WHERE sl_no='$search' AND ward_no='$ward_no'";
             // DB Data Search Query Execute
