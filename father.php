@@ -35,35 +35,14 @@
 </head>
 <body>
     <!-- NAV form w3 school -->
-    <?php $nav = new nav; ?>
-    <div class="topnav" id="myTopnav">
-        <a href="<?php echo $nav->homePage; ?>" class="active">Home</a>
-        <a class="fontGalanda" href="sl-number.php">ভোটার/সিরিয়াল নাম্বার দিয়ে</a>
-        <a class="fontGalanda" href="father.php">বাবার নাম দিয়ে</a>
-        <a class="fontGalanda" href="mother.php">মাতার নাম দিয়ে</a>
-        <a href="<?php echo $nav->logOUt; ?>">Log Out</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!-- NAV JS from W3 School -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            }else{
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <?php require_once 'nav.php';?>
 
     <!-- Search Form -->
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
                 <form id="search" action="" method="post">
-                    <br><b class="redNotice">NOTE: </b><span class="redNotice">বাংলায় বাবার নাম লিখে খুজুন</span>
+                    <br><b class="redNotice">NOTE: </b><span class="redNotice">বাংলায় বাবার নাম লিখে খুজুন। নামের কিছু অংশ দিয়ে চেষ্টা করতে পারেন।</span>
                     <br><br><input placeholder="বাংলায় বাবার নাম লিখে খুজুন" type="text" name="search">
                     <input type="submit" value="Submit">
                 </form>

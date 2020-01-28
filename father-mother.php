@@ -42,8 +42,9 @@
         <div class="row">
             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
                 <form id="search" action="" method="post">
-                    <br><b class="redNotice">NOTE: </b><span class="redNotice">বাংলায় মাতার নাম দিয়ে খুজুন। নামের কিছু অংশ দিয়ে চেষ্টা করতে পারেন।</span>
-                    <br><br><input placeholder="বাংলায় মাতার নাম দিয়ে খুজুন" type="text" name="search">
+                    <br><b class="redNotice">NOTE: </b><span class="redNotice">পিতা মাতার উভয়ের নামের গুরুত্বপূর্ণ কিছু অংশ দিয়ে চেষ্টা করুন।</span>
+                    <br><br><input placeholder="পিতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="father">
+                    <input placeholder="মাতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="mother">
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -59,13 +60,13 @@
         
         // Request Method Check
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            if(empty($_POST['search'])){
+            if(empty($_POST['father'])){
                 die("Enter Name or NID for data.");
             }
-            $search = $_POST['search'];
-            $ward_no = '30';
+            $father = $_POST['father'];
+            $mother = $_POST['mother'];
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE mother LIKE '%$search%'";
+            $sql = "SELECT * FROM voter_lists WHERE father LIKE '%$father%' AND mother LIKE '%$mother%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
