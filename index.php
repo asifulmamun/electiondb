@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+    <?php
+        session_start();
+        $login_status = $_SESSION['login'];
+        echo $login_status . ' Before Condition<br>';
+
+        // // if not logged
+        // if($_SESSION['login'] !== 'Logged'){
+            
+        //     echo '<script>alert("Your have not logged in yet.");</script>';
+        //     echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
+        //     // header('location:login/');
+        // }
+        // else{
+    ?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -16,22 +30,6 @@
         require "configuration/connection.php"; // include db connection
         require "configuration/init.php"; // include db connection
     ?>
-
-    <?php
-        session_start();
-        $_SESSION['login_status'] = $_SESSION['login_status'];
-        echo $_SESSION['login_status'] . ' Before Condition<br>';
-
-        // // if not logged
-        // if($_SESSION['login_status'] !== 'true'){
-            
-        //     echo '<script>alert("Your have not logged in yet.");</script>';
-        //     echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
-        //     // header('location:login/');
-        // }
-        // else{
-    ?>
-
 </head>
 <body>
     <!-- NAV form w3 school -->
