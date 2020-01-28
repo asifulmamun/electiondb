@@ -86,7 +86,7 @@
             $search = $_POST['search'];
             $ward_no = '30';
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE sl_no='$search'";
+            $sql = "SELECT * FROM voter_lists WHERE sl_no='$search' AND ward_no='$ward_no'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
