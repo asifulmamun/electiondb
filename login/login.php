@@ -18,7 +18,7 @@
 
 
     if($id == "mamun" AND $passWord == "aroj"){
-      $_SESSION["login"] = "Logged";
+      $_SESSION["login"] = true;
 
       echo '<script>alert("Login Success..");</script>';
       echo $_SESSION["login"] . '<br><h1 style="color:green;">For go to home <a href="../">click here</a>.</h1>';
