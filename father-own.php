@@ -7,8 +7,8 @@
             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
                 <form id="search" action="" method="post">
                     <br><b class="redNotice">NOTE: </b><span class="redNotice">পিতা ও নিজ নামের গুরুত্বপূর্ণ কিছু অংশ দিয়ে চেষ্টা করুন।</span>
-                    <input placeholder="নিজ নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="own">
-                    <br><br><input placeholder="পিতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="father">
+                    <br><br><input placeholder="নিজ নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="own">
+                    <input placeholder="পিতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="father">
                     <input type="submit" value="Submit">
                 </form>
             </div>
