@@ -2,12 +2,12 @@
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php $nav = new nav; ?>
-    <div class="topnav" id="myTopnav">
+    <div class="topnav fixed" id="myTopnav">
         <a href="<?php echo $nav->homePage; ?>" class="active">Home</a>
-        <a class="fontGalanda" href="sl-number.php">ভোটার/সিরিয়াল নাম্বার দিয়ে</a>
-        <a class="fontGalanda" href="father.php">বাবার নাম দিয়ে</a>
-        <a class="fontGalanda" href="mother.php">মাতার নাম দিয়ে</a>
-        <a class="fontGalanda" href="father-mother.php">পিতা মাতার নাম দিয়ে</a>
+        <a class="fontGalanda" href="sl-number.php">ভোটার/সিরিয়াল নাম্বার</a>
+        <a class="fontGalanda" href="father.php">বাবার নাম</a>
+        <a class="fontGalanda" href="mother.php">মাতার নাম</a>
+        <a class="fontGalanda" href="father-mother.php">পিতা মাতার নাম</a>
         <a href="<?php echo $nav->logOUt; ?>">Log Out</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -23,8 +23,18 @@
                 x.className = "topnav";
             }
         }
+
     </script>
 
+    <!-- style by asifulmamun -->
+    <style>
+        .fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
     <!-- ecs logo -->
     <center>
     <img style="width: 80px;margin: 15px 0px;" src="http://election.nrbrightsmovement.com/assets/img/esc.jpg" alt="ecs-bd">

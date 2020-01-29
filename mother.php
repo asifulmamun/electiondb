@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-    <?php
-        session_start();
-
-        $login_status = $_SESSION["login"];
-
-        echo $login_status . '<a style="color:blue;" href="https://m.me/asifulmamun">@asifulmamun</a><br>';
-
-        // // if not logged
-        // if($_SESSION['login'] !== 'Logged'){
-            
-        //     echo '<script>alert("Your have not logged in yet.");</script>';
-        //     echo $_SESSION['login_status'] . '<br><h1 style="color:red;">For Login <a href="login/">click here</a>.</h1>';
-        //     // header('location:login/');
-        // }
-        // else{
-    ?>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- bootstrat css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
-    <!-- custom or MAIN css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- PHP included file or some global variable -->
-    <?php
-        require "configuration/connection.php"; // include db connection
-        require "configuration/init.php"; // include db connection
-    ?>
-</head>
-<body>
-    <!-- NAV form w3 school -->
-    <?php require_once 'nav.php';?>
+    <!-- Header -->
+    <?php require_once 'header.php';?>
 
     <!-- Search Form -->
     <div class="container">
@@ -143,26 +107,8 @@
 
     <?php
             } // While loop
-        } // Request method check
-        else{
-    ?>
-    
-    <!-- if Request Method not POST/ Default -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-                <!-- default Content -->
-                <br><br>
-                <center>
-                    <h1 class="fontGalanda">IDEA : আরজ আলী সরদার</h1><br>
-                    <h1 class="fontGalanda">DEVELPER : <a title="Facebook Profile" href="https://facebook.me/asifulmamun">আল মামুন</a></h1>
-                </center>
-            </div>
-            <div class="col-md-1 col-sm-1"></div>
-        </div> <!-- row -->
-    </div><!-- Container if Request Method not POST/ Default -->
-
-    <?php
+        }else{
+            require_once 'body-notice.php'; // call notice page
         } // Request Method
     ?>
 
