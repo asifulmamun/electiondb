@@ -16,7 +16,6 @@
         </div> <!-- row -->
     </div> <!-- container | Search form -->
 
-
     <!-- Data -->
     <?php
         // db connection object
