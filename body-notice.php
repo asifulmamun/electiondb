@@ -6,14 +6,19 @@
                 <br><br>
                 <center><b>NOTE: বাংলায় নাম/পিতা/মাতার নাম লিখে সার্চ করার সময় ডাটাবেইজে নামের বানান ভূল থাকার কারনে অনেক সময় তথ্য পাওয়া যাও না। তাই নামের পুরো অংশ না লিখে গুরুত্বপূর্ণ অংশ লিখে সার্চ করুন। যেমন নাম যদি হয়ঃ হাসানুল করিম। তখন হাসানুল করি, অথম নুল করিম নুল করি ইত্যাদি এভাবে লিখলেও চলে আসতে পারে।</b></center>
                 <br><br>
-                <table align="center" id="dataTable">
+                <table align="center" border="1">
                     <tr>
                         <td style="text-align: center"><h4 class="fontGalanda">IDEA</h4></td>
-                        <td><h4 class="fontGalanda">আরজ আলী সরদার</h4></td>
+                    </tr>
+                    <tr>
+                    <td><h4 class="fontGalanda">আরজ আলী সরদার</h4></td>
                     </tr>
                     <tr>
                         <td style="text-align: center"><h4 class="fontGalanda">DEVELOPER</td>
-                        <td><h4 class="fontGalanda">
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 class="fontGalanda">
                             <center><a title="Facebook Profile" href="https://facebook.com/asifulmamun">আল মামুন</a><br>
                             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FasifulmamunPage&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="80%" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></center>
                         </td>
