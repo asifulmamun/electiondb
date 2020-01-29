@@ -29,7 +29,7 @@
             $search = $_POST['search'];
             $ward_no = '30';
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE nid LIKE '%$search%' OR name LIKE '%$search%' OR ward_no LIKE '%$ward_no%'";
+            $sql = "SELECT * FROM voter_lists WHERE nid LIKE '%$search%' OR name LIKE '%$search%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
