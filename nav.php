@@ -4,6 +4,7 @@
     <?php $nav = new nav; ?>
     <div class="topnav fixed" id="myTopnav">
         <a href="<?php echo $nav->homePage; ?>" class="active">নিজ নাম অথবা আইডি</a>
+        <a class="fontGalanda" href="dob.php">পিতা ও নিজ নাম</a>
         <a class="fontGalanda" href="father-own.php">পিতা ও নিজ নাম</a>
         <a class="fontGalanda" href="father.php">শুধু পিতার নাম</a>
         <a class="fontGalanda" href="mother.php">শুধু মাতার নাম</a>
