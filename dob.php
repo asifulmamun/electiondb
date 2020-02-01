@@ -24,7 +24,7 @@
         
         // Request Method Check
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            if(empty($_POST['name'])){
+            if(empty($_POST['dob'])){
                 die("Enter Name or NID for data.");
             }
             $name = $_POST['name'];
