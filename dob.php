@@ -30,7 +30,7 @@
             $name = $_POST['name'];
             $dob = $_POST['dob'];
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE dob LIKE '%$dob%'";
+            $sql = "SELECT * FROM voter_lists WHERE dob LIKE '%$dob%' AND name LIKE '%$name%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
