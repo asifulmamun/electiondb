@@ -7,8 +7,8 @@
             <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
                 <form id="search" action="" method="post">
                     <br><b class="redNotice">NOTE: </b><span class="redNotice">পিতা মাতার উভয়ের নামের গুরুত্বপূর্ণ কিছু অংশ দিয়ে চেষ্টা করুন।</span>
-                    <br><br><input placeholder="পিতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="father">
-                    <input placeholder="মাতার নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="mother">
+                    <br><br><input placeholder="নিজের নামের গুরুত্বপূর্ণ কিছু অংশ অথবা নাম লিখুন" type="text" name="name">
+                    <input placeholder="জন্ম তারিখ/মাস/বছর (০১/০১/১৯৯০)"type="text" name="dob">
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -27,10 +27,10 @@
             if(empty($_POST['father'])){
                 die("Enter Name or NID for data.");
             }
-            $father = $_POST['father'];
-            $mother = $_POST['mother'];
+            $name = $_POST['name'];
+            $dob = $_POST['dob'];
             // Query Which Result Want
-            $sql = "SELECT * FROM voter_lists WHERE father LIKE '%$father%' AND mother LIKE '%$mother%'";
+            $sql = "SELECT * FROM voter_lists WHERE name LIKE '%$name%' AND dob LIKE '%$dob%'";
             // DB Data Search Query Execute
             $results = $db->conn->query($sql);
 
