@@ -28,6 +28,7 @@
                         <tr>
                             <td>
                                 <center>
+                                    <div>Counter Added After Election: 5th Feb, 2020</div>
                                     <!-- Begin Web-Stat code v 6.3 -->
                                     <span id="wts1948882">&nbsp;</span><script>
                                     var wtsh = {};
