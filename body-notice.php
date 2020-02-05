@@ -25,6 +25,35 @@
                                 </center>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <!-- Begin Web-Stat code v 6.3 -->
+                                    <span id="wts1948882">&nbsp;</span><script>
+                                    var wtsh = {};
+                                    wtsh['invisible']='#';
+                                    wtsh['text_counter']='#';
+                                    wtsh['page_name']='#';
+                                    wtsh['page_group']='#';
+                                    wtsh['conversion_number']='#';
+                                    var wts=document.createElement('script');wts.type='text/javascript';
+                                    wts.async=true;wts.src='https://wts.one/2/1948882/log6_2.js';
+                                    document.getElementById('wts1948882').appendChild(wts);
+                                    </script><noscript><a href="https://www.web-stat.com">
+                                    <img src="https://wts.one/6/2/1948882.gif" 
+                                    alt="Web-Stat web counter"></a></noscript>
+                                    <!-- End Web-Stat code v 6.3 -->
+                                    <br>
+                                    <!-- hitwebcounter Code START -->
+                                    Total/Refreshed:
+                                    <img src="https://hitwebcounter.com/counter/counter.php?page=7190951&style=0005&nbdigits=5&type=page&initCount=0" title="Free-Counter" Alt="hitwebcounter"   border="0" >
+                                    <br>
+                                    <!-- hitwebcounter Code START -->
+                                    Unique:
+                                    <img src="https://hitwebcounter.com/counter/counter.php?page=7190953&style=0005&nbdigits=5&type=ip&initCount=0" title="Free-Counter" Alt="hitwebcounter"   border="0" >
+                                </center>
+                            </td>
+                        </tr>
                     </table>
                 </center>
             </div>
